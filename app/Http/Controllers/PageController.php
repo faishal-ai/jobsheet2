@@ -14,7 +14,7 @@ class PageController extends Controller
     public function about()
     {
         return "Nama: [Masukkan Nama] <br> NIM: [Masukkan NIM]";
-    }
+    } 
 
     public function articles($id)
     {
