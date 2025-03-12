@@ -41,10 +41,8 @@ Route::get('/user/{name?}', function ($name = 'John') {
     return 'Nama saya ' . $name;
 });
 
-// Route::get('/greeting', function () { 
-//     return view('hello', ['name' => 'Faishal']); 
-//     }); 
-
+//  
+ 
 
     Route::resource('photos', PhotoController::class)->only([ 
         'index', 'show' 
