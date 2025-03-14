@@ -17,14 +17,14 @@ class SupplierSeeder extends Seeder
             [
                 'supplier_id' => 1,
                 'supplier_kode' => 'NJG',
-                'supplier_nama' => 'Nathanael Juan Gracedo',
+                'supplier_nama' => 'Faishal Harist Rahmawan',
                 'supplier_alamat' => 'Kediri',
             ],
             [
                 'supplier_id' => 2,
                 'supplier_kode' => 'AK',
                 'supplier_nama' => 'Ahmad Kasim',
-                'suplier_alamat' => 'Blitar',
+                'supplier_alamat' => 'Blitar',
             ],
             [
                 'supplier_id' => 3,
