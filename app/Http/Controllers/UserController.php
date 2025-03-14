@@ -9,7 +9,16 @@ use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
     public function index(){
-        $user = UserModel::where('level_id', 2)->count();
+        $user = UserModel::firstOrCreate(
+            [
+                'username' => 'manager34',
+                'nama' => 'Manager Tiga Empat',
+                'password' => Hash::make('12345'),
+                'level_id' => 2
+            ],
+        );
+        $user->save();
+        
         return view('user', ['data' => $user]);
 
         // $user = UserModel::findOr(20, ['username', 'nama'], function () {
